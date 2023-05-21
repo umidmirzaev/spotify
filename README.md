@@ -35,3 +35,7 @@ More info can be found here:
 
 
 ### Final Result
+![Dashboard]([image.jpg](https://github.com/umidmirzaev/spotify/blob/main/images/Dashboard.png))
+
+
+https://github.com/umidmirzaev/spotify/blob/main/images/Dashboard.png
