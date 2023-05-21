@@ -45,9 +45,13 @@ More info can be found here:
 - Web API to retrieve metadata from Spotify content.
 
 ### Steps
-- Set up a CloudWatch alarm based on a static threshold (optional)
-- Create a bucket and folders on AWS S3
+- Set up a CloudWatch alarm based on a static threshold (optional).
+- Create a bucket and folders on AWS S3.
 - Create two AWS Lambda functions:
-  - The first function `spotify_api_data_extract` will fetch raw data from the Spotify Web API and save it into a folder containing raw data 
-  - The second function `spotify_transformation_load_function` will pick up this raw data from the folder, process it, and then store the resulting transformed datasets into a separate folder with processed data within the same bucket
+  - The first function `spotify_api_data_extract` will fetch raw data from the Spotify Web API and save it into a folder containing raw data. It is important to add the "AmazonS3FullAccess" permission to an existing IAM role to make AWS Lambda connect to S3.
+  - The second function `spotify_transformation_load_function` will pick up this raw data from the folder, process it, and then store the resulting transformed datasets into a separate folder with processed data within the same bucket. It is important to give the `spotify_transformation_load_function` Lambda function access to the entire Lambda environment. 
+ - We need to set up two triggers, one for each Lambda function. 
+   - Create a CloudWatch Events Rule that triggers on a schedule. In our case, we can add a schedule for every day. 
+   - The second trigger will be linked to our S3 bucket. This one will activate the second function whenever new data arrives in our bucket.
+-
 
