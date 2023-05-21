@@ -24,6 +24,7 @@ More info can be found here:
 - Language: Python, SQL
 - Cloud - [Amazon Web Services](https://aws.amazon.com)
 - Extraction & Transformation - [Jupyter Notebook](https://jupyter.org)
+- Application and Infrastructure Monitoring - [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/)
 - Serverless computing - [AWS Lambda](https://aws.amazon.com/lambda/)
 - Storage - [Amazon S3](https://aws.amazon.com/s3/)
 - Serverless Data Integration - [AWS Glue](https://aws.amazon.com/glue/)
