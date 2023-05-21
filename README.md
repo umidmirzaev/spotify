@@ -37,6 +37,8 @@ More info can be found here:
 ### Final Result
 ![SpotifyDashboard](https://github.com/umidmirzaev/spotify/blob/main/images/Spotify_Dashboard.jpg)
 
+![SpotifyDashboard](https://github.com/umidmirzaev/spotify/blob/main/images/Spotify_Dashboard.png)
+
 ![Dashboard](https://github.com/umidmirzaev/spotify/blob/main/images/Dashboard.png)
 
 ## Setup
