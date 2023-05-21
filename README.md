@@ -50,12 +50,10 @@ More info can be found here:
 2. **Creating S3 Bucket and Folders**: Make a new bucket and folders on AWS S3.
 
 3. **Lambda Functions**: We need two AWS Lambda functions:
-
   - `spotify_api_data_extract` is the first function. It pulls raw data from Spotify Web API and saves it into a folder for raw data. For this to work, the function needs the "AmazonS3FullAccess" permission.
   - `spotify_transformation_load_function` is the second function. It takes raw data from the raw data folder, processes it, and stores the processed data into a new folder in the same bucket. This function needs access to the entire Lambda environment.
 
 4. **Setting Up Triggers**: Both Lambda functions need triggers:
-
   - The first function runs on a schedule, set up in CloudWatch Events. You can set it to run every day.
   - The second trigger is linked to our S3 bucket. It runs the second function every time new data is added to the bucket.
 
