@@ -45,13 +45,22 @@ More info can be found here:
 - Web API to retrieve metadata from Spotify content.
 
 ### Steps
-- Set up a CloudWatch alarm based on a static threshold (optional).
-- Create a bucket and folders on AWS S3.
-- Create two AWS Lambda functions:
-  - The first function `spotify_api_data_extract` will fetch raw data from the Spotify Web API and save it into a folder containing raw data. It is important to add the "AmazonS3FullAccess" permission to an existing IAM role to make AWS Lambda connect to S3.
-  - The second function `spotify_transformation_load_function` will pick up this raw data from the folder, process it, and then store the resulting transformed datasets into a separate folder with processed data within the same bucket. It is important to give the `spotify_transformation_load_function` Lambda function access to the entire Lambda environment. 
- - We need to set up two triggers, one for each Lambda function. 
-   - Create a CloudWatch Events Rule that triggers on a schedule. In our case, we can add a schedule for every day. 
-   - The second trigger will be linked to our S3 bucket. This one will activate the second function whenever new data arrives in our bucket.
--
+1. **CloudWatch Alarm Setup (Optional)**: You can set up a CloudWatch alarm with a fixed threshold if you need to.
 
+2. Creating S3 Bucket and Folders: Make a new bucket and folders on AWS S3.
+
+3. Lambda Functions: We need two AWS Lambda functions:
+
+  - spotify_api_data_extract is the first function. It pulls raw data from Spotify Web API and saves it into a folder for raw data. For this to work, the function needs the "AmazonS3FullAccess" permission.
+
+  - spotify_transformation_load_function is the second function. It takes raw data from the raw data folder, processes it, and stores the processed data into a new folder in the same bucket. This function needs access to the entire Lambda environment.
+
+4. Setting Up Triggers: Both Lambda functions need triggers:
+
+  - The first function runs on a schedule, set up in CloudWatch Events. You can set it to run every day.
+
+  - The second trigger is linked to our S3 bucket. It runs the second function every time new data is added to the bucket.
+
+5. Creating a Glue Crawler: Set up a Glue Crawler to read files in S3. It finds information like column names and data types. After running, the Crawler makes a table in AWS Glue. This table is used in AWS Athena for queries.
+
+6. Linking Athena and QuickSight: Connect Athena with QuickSight for visualizing and analyzing the data we've stored in Athena.
