@@ -21,7 +21,7 @@ More info can be found here:
 
 ### Tools & Technologies
 
-- Language: Python, SQL
+- Language: [Python](https://www.python.org/)
 - Cloud - [Amazon Web Services](https://aws.amazon.com)
 - Extraction & Transformation - [Jupyter Notebook](https://jupyter.org)
 - Application and Infrastructure Monitoring - [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/)
