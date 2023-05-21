@@ -18,3 +18,9 @@ The dataset comes from the weekly music chart called "Top Songs Norway", which w
 More info can be found here: 
 - Website: https://developer.spotify.com/documentation/web-api
 - Playlist: https://open.spotify.com/playlist/37i9dQZEVXbJvfa0Yxg7E7
+
+### Tools & Technologies
+
+- Cloud - [Amazon Web Services](https://aws.amazon.com)
+
+
