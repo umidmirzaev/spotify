@@ -32,7 +32,7 @@ More info can be found here:
 - Data visualization - [Amazon QuickSight](https://aws.amazon.com/quicksight/)
 
 ### Data Pipeline Architecture
-
+![Architecture](https://github.com/umidmirzaev/spotify/blob/main/images/Spotify_Architecture.jpg)
 
 ### Final Result
 ![Dashboard](https://github.com/umidmirzaev/spotify/blob/main/images/Dashboard.png)
