@@ -1,5 +1,5 @@
 # Spotify
-A data pipeline with Python, SQL, AWS and much more!
+Spotify End-To-End Data Pipeline Project
 
 ## Description
 
@@ -21,6 +21,11 @@ More info can be found here:
 
 ### Tools & Technologies
 
+- Language: Python, SQL
 - Cloud - [Amazon Web Services](https://aws.amazon.com)
-
-
+- Extraction & Transformation - [Jupyter Notebook](https://jupyter.org)
+- Serverless computing - [AWS Lambda](https://aws.amazon.com/lambda/)
+- Storage - [Amazon S3](https://aws.amazon.com/s3/)
+- Serverless Data Integration - [AWS Glue](https://aws.amazon.com/glue/)
+- Serverless Query Service - [Amazon Athena](https://aws.amazon.com/athena/)
+- Data visualization - [Amazon QuickSight](https://aws.amazon.com/quicksight/)
