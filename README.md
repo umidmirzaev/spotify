@@ -37,5 +37,14 @@ More info can be found here:
 ### Final Result
 ![Dashboard](https://github.com/umidmirzaev/spotify/blob/main/images/Dashboard.png)
 
+## Setup
 
-https://github.com/umidmirzaev/spotify/blob/main/images/Dashboard.png
+### Prerequisites
+
+- AWS Cloud account where you can start building with a free tier.
+- Web API to retrieve metadata from Spotify content.
+
+### Steps
+- Create a CloudWatch alarm based on a static threshold (optional)
+
+
