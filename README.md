@@ -47,20 +47,18 @@ More info can be found here:
 ### Steps
 1. **CloudWatch Alarm Setup (Optional)**: You can set up a CloudWatch alarm with a fixed threshold if you need to.
 
-2. Creating S3 Bucket and Folders: Make a new bucket and folders on AWS S3.
+2. **Creating S3 Bucket and Folders**: Make a new bucket and folders on AWS S3.
 
-3. Lambda Functions: We need two AWS Lambda functions:
+3. **Lambda Functions**: We need two AWS Lambda functions:
 
-  - spotify_api_data_extract is the first function. It pulls raw data from Spotify Web API and saves it into a folder for raw data. For this to work, the function needs the "AmazonS3FullAccess" permission.
+  - `spotify_api_data_extract` is the first function. It pulls raw data from Spotify Web API and saves it into a folder for raw data. For this to work, the function needs the "AmazonS3FullAccess" permission.
+  - `spotify_transformation_load_function` is the second function. It takes raw data from the raw data folder, processes it, and stores the processed data into a new folder in the same bucket. This function needs access to the entire Lambda environment.
 
-  - spotify_transformation_load_function is the second function. It takes raw data from the raw data folder, processes it, and stores the processed data into a new folder in the same bucket. This function needs access to the entire Lambda environment.
-
-4. Setting Up Triggers: Both Lambda functions need triggers:
+4. **Setting Up Triggers**: Both Lambda functions need triggers:
 
   - The first function runs on a schedule, set up in CloudWatch Events. You can set it to run every day.
-
   - The second trigger is linked to our S3 bucket. It runs the second function every time new data is added to the bucket.
 
-5. Creating a Glue Crawler: Set up a Glue Crawler to read files in S3. It finds information like column names and data types. After running, the Crawler makes a table in AWS Glue. This table is used in AWS Athena for queries.
+5. **Creating a Glue Crawler**: Set up a Glue Crawler to read files in S3. It finds information like column names and data types. After running, the Crawler makes a table in AWS Glue. This table is used in AWS Athena for queries.
 
-6. Linking Athena and QuickSight: Connect Athena with QuickSight for visualizing and analyzing the data we've stored in Athena.
+6. **Linking Athena and QuickSight**: Connect Athena with QuickSight for visualizing and analyzing the data we've stored in Athena.
