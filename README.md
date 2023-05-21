@@ -45,6 +45,9 @@ More info can be found here:
 - Web API to retrieve metadata from Spotify content.
 
 ### Steps
-- Create a CloudWatch alarm based on a static threshold (optional)
-
+- Set up a CloudWatch alarm based on a static threshold (optional)
+- Create a bucket and folders on AWS S3
+- Create two AWS Lambda functions:
+  - The first one, named spotify_api_data_extract, will fetch raw data from the Spotify Web API and save it into a folder called "Raw data" 
+  - The second function, named spotify_transformation_load_function, will pick up this raw data from the "Raw data" folder, process it, and then store the resulting transformed datasets into a separate folder called "Processed data" within the same bucket
 
