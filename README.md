@@ -35,11 +35,7 @@ More info can be found here:
 ![Architecture](https://github.com/umidmirzaev/spotify/blob/main/images/Spotify_Architecture.jpg)
 
 ### Final Result
-![SpotifyDashboard](https://github.com/umidmirzaev/spotify/blob/main/images/Spotify_Dashboard.jpg)
-
-![SpotifyDashboard](https://github.com/umidmirzaev/spotify/blob/main/images/Spotify_Dashboard.png)
-
-![Dashboard](https://github.com/umidmirzaev/spotify/blob/main/images/Dashboard.png)
+![SpotifyDashboard](https://github.com/umidmirzaev/spotify/blob/main/images/Dashboard.png)
 
 ## Setup
 
