@@ -30,3 +30,8 @@ More info can be found here:
 - Serverless Data Integration - [AWS Glue](https://aws.amazon.com/glue/)
 - Serverless Query Service - [Amazon Athena](https://aws.amazon.com/athena/)
 - Data visualization - [Amazon QuickSight](https://aws.amazon.com/quicksight/)
+
+### Data Pipeline Architecture
+
+
+### Final Result
