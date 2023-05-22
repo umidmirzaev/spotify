@@ -1,5 +1,7 @@
 # Spotify
 
+![logo](https://github.com/umidmirzaev/spotify/blob/main/images/Spotify-Logo.png)
+
 ## Description
 
 ### Objective
