@@ -6,11 +6,11 @@
 
 ### Objective
 
-The goal of the project is to build a data pipeline that extracts data about the most popular songs in Norway. We want to understand the current music trends in Norway, which albums are popular, and who are the artists behind these songs. We get this data from the "Top Songs - Norway" playlist on Spotify.
+The goal of the project is to build a data pipeline that extracts information on the most popular songs in Norway. Our aim is to gain insights into the current music trends in Norway, popular albums, and who are the artists behind these songs. We source this data from Spotify's "Top Songs - Norway" playlist.
 
 The data pipeline allows us to continuously collect updated data from Spotify's API since this playlist changes weekly, so we can always stay in the loop about what's new and popular in the Norwegian music scene. 
 
-As a culmination of the project, we create a dashboard that gives us a clear view of music trends, popular albums, and leading artists in Norway.
+As a culmination of the project, we create a dashboard that provides us a clear overview of music trends, popular albums, and leading artists in Norway.
 
 ### Dataset
 
