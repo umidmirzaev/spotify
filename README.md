@@ -61,3 +61,9 @@ More info can be found here:
 5. **Creating a Glue Crawler**: Set up a Glue Crawler to read files in S3. It finds information like column names and data types. After running, the Crawler makes a table in AWS Glue. This table is used in AWS Athena for queries.
 
 6. **Linking Athena and QuickSight**: Connect Athena with QuickSight for visualizing and analyzing the data we've stored in Athena.
+
+## Potential next steps
+
+- Build dimensional models
+- Add more visualizations
+
