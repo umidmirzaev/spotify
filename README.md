@@ -1,5 +1,4 @@
 # Spotify
-Spotify End-To-End Data Pipeline Project
 
 ## Description
 
